@@ -1,0 +1,142 @@
+body {
+    margin: 0 auto;
+}
+.vholder {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+video {
+    display: block;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+.textshadow {
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+    z-index: 10;
+}
+.mainbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+}
+.mainbody .textholder {
+    width: 50%;
+    margin: 3% 10% 5% 5%;
+    color: black;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+.mainbody .textholder span {
+    color: red;
+    padding-left: 10px;
+}
+.mainbody .form {
+    width: 50%;
+}
+.mainbody .form .formholder {
+    margin-top: 3%;
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.mainbody .form .formholder .inputfield {
+    width: 305px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    border: 1px solid #e7e8ea;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    margin: 10px 5px;
+}
+footer {
+    background-color: #919293;
+    padding-bottom: 30px;
+    color: white;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+.row .social {
+    background-color: white;
+    border-radius: 25px;
+}
+.row .social a {
+    text-decoration: none;
+    width: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.row .social a img {
+    margin-top: 5px;
+}
+.media2018 {
+    text-align: center;
+    margin-top: 20px;
+}
+@media screen and (max-width: 405px) {
+    h1 {
+        font-size: 32px;
+    }
+    .mainbody {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .mainbody .textholder {
+        width: 95%;
+        margin: 0;
+        padding: 2% 2% 5% 2%;
+    }
+    .mainbody .form {
+        width: 100%;
+        padding-bottom: 3%;
+    }
+    .row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .row .social {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+}
