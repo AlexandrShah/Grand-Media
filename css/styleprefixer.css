@@ -53,6 +53,7 @@ h1 {
 }
 .mainbody .form {
     width: 50%;
+    margin: 1% 10% 5% 5%;
 }
 .mainbody .form .formholder {
     margin-top: 3%;
@@ -80,34 +81,10 @@ footer {
     padding-bottom: 30px;
     color: white;
 }
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    padding-top: 25px;
-}
-.row .social {
-    background-color: white;
-    border-radius: 25px;
-}
-.row .social a {
-    text-decoration: none;
-    width: 20px;
-    padding: 10px;
-    text-align: center;
-}
-.row .social a img {
-    margin-top: 5px;
-}
 .media2018 {
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
+
 }
 @media screen and (max-width: 405px) {
     h1 {

@@ -6,16 +6,14 @@
     <link rel="stylesheet" href="css/styleprefixer.css">
     <link rel="shortcut icon" type="img/png" href="media/favicon.png">
 </head>
-<body>
+<body onload="hide()">
 <header class="">
     <div class="Vholder">
         <h1>Lorem ipsum dolor.</h1>
-        <video autoplay loop="loop">
+        <video id="myVideo" autoplay="autoplay" loop="loop" controls muted>
             <source src="media/test.mp4" type="video/mp4">
         </video>
-
     </div>
-
 </header>
 <div class="mainbody">
     <div class="textholder">
@@ -34,22 +32,17 @@
     </div>
 </div>
 <footer>
-    <div class="row">
-        <div>
-            <strong>Grand Media</strong> <br>
-        </div>
-        <div>
-            Createt with &#10084; by <strong>Shakhovoy</strong>
-        </div>
-        <div class="social">
-            <a href="https://twitter.com/?lang=ru"> <img class="" src="media/twitter-icon.png"> </a>
-            <a href="https://www.facebook.com"> <img class="" src="media/facebook-icon.png"> </a>
-            <a href="https://www.instagram.com/nasa/"> <img class="" src="media/instagram-icon.png"> </a>
-        </div>
-    </div>
     <div class="media2018">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </div>
 </footer>
+<script>
+    var myVideo = document.getElementById( 'myVideo' );
+
+    function hide(){
+        myVideo.removeAttribute( 'controls' );
+    }
+
+</script>
 </body>
 </html>
